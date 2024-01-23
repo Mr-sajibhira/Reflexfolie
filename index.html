@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexfolie</title>
+    <!-- Style CSS Link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Media CSS Link  -->
+    <link rel="stylesheet" href="css/media.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!--------------- Banner Section Satrt------------------------->
+    <style>
+        /* Menu Section Start */
+        .navbar {
+            padding: 20px 0px;
+        }
+
+        .nav_item {
+            list-style: none;
+            margin: auto 10px;
+        }
+
+        .nav_link {
+            color: var(--black-color);
+            font-family: var(--accent-font);
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+
+        /*  Menu Section End  */
+
+
+        .banner_section {
+            background-image: url(./images/bgtop.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: right;
+            background-position-y: top;
+            background-color: #ffffff;
+
+
+
+        }
+
+        .banner_slider {
+            position: relative;
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bannerSlider .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        .swiper-pagination-bullet {
+            width: 16px !important;
+            height: 16px !important;
+            background: #949494;
+            opacity: 1 !important;
+            margin: 0px 20px !important;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #F15A06;
+        }
+
+        .slider_box {
+            position: relative;
+        }
+
+        .slider_box::before {
+            content: '';
+            position: absolute;
+            background: linear-gradient(234deg, rgba(0, 0, 0, 0.00) 42.22%, #000 97.55%);
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider_content {
+            position: absolute;
+            top: 50%;
+            left: 50px;
+            transform: translate(50px, -50%);
+            width: 485px;
+        }
+
+        .slider_title {
+            color: #FFF;
+            font-family: Inter;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    </style>
+
+    <section>
+        <div class="banner_section">
+            <div class="container">
+
+                <!-- Menu -->
+                <nav class="navbar">
+                    <ul class="navbar_nav flex">
+                        <li class="nav_item"><a class="nav_link" href="#">Toepassingen</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Marketingen</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Rollen reflective</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Vellen</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Tapes</a></li>
+                        <li class="nav_item"><a class="nav_link" href="#">Accessoires</a></li>
+
+                    </ul>
+                </nav>
+                <!-- Menu -->
+
+                <!-- Banner Slider -->
+                <div class="banner_slider">
+
+                    <!-- Swiper -->
+                    <div class="swiper bannerSlider">
+                        <!-- swiper-wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slider Loop -->
+                            <div class="swiper-slide slider_box">
+                                <img src="/images/banner slider bg.png" alt="" />
+                                <div class="slider_content">
+                                    <h2 class="slider_title">Reflecteer jouw veiligheid!</h2>
+                                    <p class="title_4" style="margin: 10px 0px 50px 0px;">Helder - zichtbaar -
+                                        beschermd!</p>
+                                    <a href="#" class="btn">BEKIJK ONS ASSORTIMENT</a>
+                                </div>
+                            </div>
+                            <!-- Slider Loop -->
+                            <div class="swiper-slide slider_box">
+                                <img src="/images/gridbox2.png" alt="gridbox2" />
+                                <div class="slider_content">
+                                    <h2 class="slider_title">Reflecteer jouw veiligheid!</h2>
+                                    <p class="title_4" style="margin: 10px 0px 50px 0px;">Helder - zichtbaar -
+                                        beschermd!</p>
+                                    <a href="#" class="btn">BEKIJK ONS ASSORTIMENT</a>
+                                </div>
+                            </div>
+                            <!-- Slider Loop -->
+                            <div class="swiper-slide slider_box">
+                                <img src="/images/gridbox.png" alt="gridbox" />
+                                <div class="slider_content">
+                                    <h2 class="slider_title">Reflecteer jouw veiligheid!</h2>
+                                    <p class="title_4" style="margin: 10px 0px 50px 0px;">Helder - zichtbaar -
+                                        beschermd!</p>
+                                    <a href="#" class="btn">BEKIJK ONS ASSORTIMENT</a>
+                                </div>
+                            </div>
+
+                        </div><!-- swiper-wrapper -->
+
+                        <div class="swiper-pagination"></div>
+
+                    </div><!-- Swiper -->
+                </div> <!-- Banner Slider -->
+
+            </div><!-- Container -->
+        </div><!-- Banner section -->
+    </section>
+
+    <!--------------- Banner Section End------------------------->
+
+    <!--------------- List Section Start------------------------->
+    <style>
+        .list_siction {
+            background-color: #b43205;
+            height: 185px;
+            overflow: hidden;
+            position: relative;
+            margin-top: -70px;
+        }
+
+        .list_siction_bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .list {
+            position: absolute;
+            bottom: 50px;
+            z-index: 10;
+            width: 1300px;
+        }
+
+        .list_icon {
+            height: 32px;
+            width: 32px;
+            margin-right: 10px;
+        }
+    </style>
+    <section>
+        <div class="list_siction">
+            <img class="list_siction_bg" src="/images/Mask-group.png" alt="">
+
+            <div class="container">
+                <div class="list flex space_between ">
+                    <div class="list_icon_box flex align_center">
+                        <img class="list_icon" src="images/iconlist.png" alt="iconlist">
+                        <p class="small_title">Op voorraad, volgende werkdag in huis</p>
+                    </div>
+
+                    <div class="list_icon_box flex align_center">
+                        <img class="list_icon" src="images/iconlist.png" alt="iconlist">
+                        <p class="small_title">Maatwerk ook mogelijk</p>
+                    </div>
+
+                    <div class="list_icon_box flex align_center">
+                        <img class="list_icon" src="images/iconlist.png" alt="iconlist">
+                        <p class="small_title">Voor al uw reflecterende oplossingen</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--------------- List Section Start------------------------->
+
+    <!-- Grid Image Box Section Start -->
+
+    <Style>
+        .grid_image_box {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .box_img {
+            border-radius: 8px;
+            transition-duration: 0.7s !important;
+        }
+
+        .grid_image_box:hover .box_img {
+            transform: scale(1.05);
+        }
+
+        .title_box {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+
+
+        }
+
+        .box_title {
+            padding: 30px;
+            text-align: center;
+        }
+    </Style>
+
+    <section style="padding: 100px 0px; background-color:#F6F6F6;">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col_6">
+                    <div class="grid_image_box">
+                        <img class="box_img" src="/images/gridbox.png" alt="gridbox">
+
+                        <div class="title_box">
+                            <div class="box_title">
+                                <h2 class="title_2 white">HULPDIENSTEN VOERTUIGEN</h2>
+                                <a href="#" class="btn white" style="margin-top: 20px;">BEKIJK NU</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_6">
+                    <div class="grid_image_box">
+                        <img class="box_img" src="/images/gridbox2.png" alt="gridbox2">
+
+                        <div class="title_box">
+                            <div class="box_title">
+                                <h2 class="title_2 white">CONTAINERMARKERINGEN</h2>
+                                <a href="#" class="btn white" style="margin-top: 20px;">BEKIJK NU</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_4">
+                    <div class="grid_image_box">
+                        <img class="box_img" src="/images/gridbox3.png" alt="gridbox3">
+
+                        <div class="title_box">
+                            <div class="box_title">
+                                <h2 class="title_2 white">REFLECTERENDE ROLLEN</h2>
+                                <a href="#" class="btn white" style="margin-top: 20px;">BEKIJK NU</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_4">
+                    <div class="grid_image_box">
+                        <img class="box_img" src="/images/gridbox4.png" alt="gridbox4">
+
+                        <div class="title_box">
+                            <div class="box_title">
+                                <h2 class="title_2 white">VLOER- MARKERINGEN</h2>
+                                <a href="#" class="btn white" style="margin-top: 20px;">BEKIJK NU</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_4">
+                    <div class="grid_image_box">
+                        <img class="box_img" src="/images/gridbox5.png" alt="gridbox5">
+
+                        <div class="title_box">
+                            <div class="box_title">
+                                <h2 class="title_2 white">ACCESSOIRES</h2>
+                                <a href="#" class="btn white" style="margin-top: 20px;">BEKIJK NU</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div> <!-- Row -->
+        </div> <!-- Container -->
+    </section>
+    <!-- Grid Image Box Section Start -->
+
+    <!--------------- Product carousel Section Start------------------------->
+
+    <style>
+        .carousel_img_box {
+            height: 346px;
+            width: auto;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #ffffff;
+        }
+
+        .product_img {
+            transition-duration: 0.7s !important;
+        }
+
+        .product_carousel:hover .product_img {
+            transform: scale(1.05);
+        }
+
+        .product_carousel_title {
+            padding: 20px 10px 10px;
+        }
+
+        .product_slider {
+            padding-top: 50px;
+            position: relative;
+            height: 100%;
+        }
+    </style>
+    <section style="padding: 80px 0px 150px; background-color:#F6F6F6;">
+
+        <div style="overflow: hidden;">
+            <div class="container">
+                <div class="carousel_title flex_space_between">
+                    <h2 class="title">Veel verkochten producten</h2>
+                    <a href="#" class="btn black_btn">BEKIJK ONS ASSORTIMENT</a>
+                </div>
+
+                <div class="product_slider">
+                    <div class="swiper productSlider" style="overflow: visible !important;">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product4.png" alt="">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product2.png" alt="product2">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product.png" alt="product">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product2.png" alt="product2">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product3.png" alt="product3">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide product_carousel">
+                                <div class="carousel_img_box flex align_center">
+                                    <img class="product_img" src="/images/product4.png" alt="product4">
+                                </div>
+                                <div class="product_carousel_title">
+                                    <h3 class="product_title">CONTOURMARKERING GEEL</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- Container -->
+        </div><!-- overflow hidden -->
+    </section>
+    <!--------------- Product carousel Section end------------------------->
+
+
+    <!--------------- Banner Section Section start------------------------->
+    <style>
+        .bg_img {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .banner_text {
+            padding-right: 100px;
+        }
+
+        .banner_right {
+            position: relative;
+            height: 100%;
+        }
+
+        .banner_image {
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 80%;
+            border-radius: 10px;
+        }
+    </style>
+    <section>
+
+        <div style="position: relative; padding: 80px 0px;">
+
+            <img class="bg_img" src="/images/bgred.png" alt="">
+            <div class="container">
+                <div class="row ">
+                    <div class="col_6">
+                        <div class="banner_text">
+                            <h2 class="title" style="margin-bottom: 30px;">HEb je een vraag of advies nodig?</h2>
+                            <p class="text_p white">Voel je vrij om contact met ons op te nemen! Bij Reflexfolie staan
+                                we klaar om al je vragen te beantwoorden en advies te bieden!</p>
+
+                            <div class="banner_button flex" style="margin-top: 30px;">
+                                <a href="#" class="btn black_btn_fill" style="margin-right: 10px;">+31 4 34301150</a>
+                                <a href="#" class="btn black_btn">info@reflexfolie.nl</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col_6">
+                        <div class="banner_right">
+                            <img src="images/man.png" class="banner_image" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- position relative -->
+    </section>
+
+
+    <!--------------- Banner Section Section end------------------------->
+
+
+
+    <!------------------ Product Grid Section Start ----------------------->
+
+    <style>
+        .producr_grid_left {
+            background-color: #000;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .producr_grid_left_content {
+            padding: 30px 20px;
+        }
+
+
+        .product_grid {
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .product_grid_img {
+            transition-duration: 0.7s !important;
+        }
+
+        .product_grid_img_box {
+            overflow: hidden;
+            border-radius: 5px 5px 0px 0px;
+            height: 250px;
+        }
+
+        .grid_text {
+            padding: 10px;
+        }
+
+        .product_grid_img_box:hover .product_grid_img {
+            transform: scale(1.05);
+        }
+    </style>
+
+    <section style="padding: 150px 0px 50px; background-color:#F6F6F6;">
+        <div class="container">
+            <div class="row">
+                <div class="col_4">
+                    <div class="producr_grid_left">
+                        <div class="producr_grid_left_content">
+                            <img class="card_img" style="margin-bottom: 50px;" src="images/logo2.png" alt="">
+
+                            <p class="text_p white" style="margin-bottom: 30px;">Wij maken gebruik van de Avery Dennison
+                                contourmarkeringen die voldoen
+                                aan de strengste veiligheidsvoorschriften voor reflecterende contourmarkeringen. </p>
+                            <p class="text_p white">
+                                Je kunt de hoeveelheid meters
+                                zelf bepalen.</p>
+
+                            <a href="#" class="btn white" style="margin-top: 30px;">BEKIJK ALLE CONTOURMARKERINGEN</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_8">
+                    <div class="product_grid_left">
+                        <h2 class="title_2" style="margin-bottom: 30px;">CONTOURMARKERINGEN</h2>
+                        <div class="row">
+                            <div class="col_4">
+                                <div class="product_grid">
+                                    <div class="product_grid_img_box">
+                                        <img class="product_grid_img" src="images/contourmarkering geel 2.png" alt="">
+
+                                    </div>
+                                    <div class="grid_text flex_space_between">
+                                        <h3 class="product_grid_text">Markering tanker wit</h3>
+                                        <img class="icon_img" src="images/Icon.png" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col_4">
+                                <div class="product_grid">
+                                    <div class="product_grid_img_box flex align_center">
+                                        <img class="product_grid_img" src="/images/product.png" alt="">
+
+                                    </div>
+                                    <div class="grid_text flex_space_between">
+                                        <h3 class="product_grid_text">Markering tanker wit</h3>
+                                        <img class="icon_img" src="images/Icon.png" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col_4">
+                                <div class="product_grid">
+                                    <div class="product_grid_img_box flex align_center">
+                                        <img class="product_grid_img" src="images/product3.png" alt="">
+
+                                    </div>
+                                    <div class="grid_text flex_space_between">
+                                        <h3 class="product_grid_text">Markering tanker wit</h3>
+                                        <img class="icon_img" src="images/Icon.png" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col_4">
+                                <div class="product_grid">
+                                    <div class="product_grid_img_box flex align_center">
+                                        <img class="product_grid_img" src="images/product4.png" alt="">
+
+                                    </div>
+                                    <div class="grid_text flex_space_between">
+                                        <h3 class="product_grid_text">Markering tanker wit</h3>
+                                        <img class="icon_img" src="images/Icon.png" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col_4">
+                                <div class="product_grid">
+                                    <div class="product_grid_img_box flex align_center">
+                                        <img class="product_grid_img" src="images/product5.png" alt="">
+
+                                    </div>
+                                    <div class="grid_text flex_space_between">
+                                        <h3 class="product_grid_text">Markering tanker wit</h3>
+                                        <img class="icon_img" src="images/Icon.png" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col_4">
+                                <div class="product_grid">
+                                    <div class="product_grid_img_box flex align_center">
+                                        <img class="product_grid_img" src="images/product3.png" alt="">
+
+                                    </div>
+                                    <div class="grid_text flex_space_between">
+                                        <h3 class="product_grid_text">Markering tanker wit</h3>
+                                        <img class="icon_img" src="images/Icon.png" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!------------------ Product Grid Section End ----------------------->
+
+    <!------------------Banner  Section Start ----------------------->
+
+    <style>
+        .laft_shape{
+             position: absolute;
+             top: -100px;
+             left: 0;
+             max-width: 450px;
+             z-index: -1;
+        }
+
+        .u2{
+            max-width: 90%;
+        }
+    </style>
+
+    <section style="padding: 150px 0px 80px; position: relative; background-color:#F6F6F6; ">
+
+        <img class="laft_shape" src="/images/bgright.png" alt="">
+
+        <div class="container">
+            <div class="row">
+                <div class="col_6">
+                    <div class="banner_text">
+                        <h2 class="title" style="margin-bottom: 30px;">AL MEER DAN <br>
+                            15 JAAR ERVARING</h2>
+                        <p class="text_p">We hebben jarenlang ervaring in de materie van veiligheid met retro reflecterende folies, hierdoor zijn vele projecten in binnen- en buitenland door onze klanten gerealiseerd. Of het nu gaat om standaard signfaces, een vel, rol of vorm reflecterende folie van Avery Denisson, we kunnen bijna alles voor u maken!</p>
+                        <!-- Button -->
+                        <a href="#" class="btn white" style="margin-top: 30px;">BEKIJK ALLE CONTOURMARKERINGEN</a>
+
+                    </div>
+                </div>
+
+                <div class="col_6">
+
+                    <div class="banner_right">
+                        <img src="images/Reflexfolie_220630_LR_25 1.png" style="top: 0;" class="banner_image u2" alt="">
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!------------------Banner  Section End ----------------------->
+
+
+
+    <!------------------Card Section  Section Start ----------------------->
+
+    <style>
+        .card_box {
+            background-color: #000;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .card_image {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 350px;
+        }
+
+        .card {
+            padding: 30px 100px 30px 30px;
+        }
+
+        .card_box_section {
+            padding: 250px 0px 150px;
+            background-color: #1A1A18;
+            background-image: url(/images/bgcard.png);
+            background-repeat: no-repeat;
+            background-position-x: right;
+        }
+    </style>
+
+    <section>
+        <div class="card_box_section">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col_6">
+                        <div class="card_box">
+                            <img class="card_image" src="/images/cardbg.png" alt="">
+                            <div class="card">
+                                <h2 class="title white" style="font-size: 35px; margin-bottom: 20px;"> MAATWERK STICKERS
+                                </h2>
+                                <p class="text_p white">Daag ons uit! Wij denken graag met je mee voor een passende
+                                    oplossing.</p>
+
+                                <!-- Button -->
+                                <a href="#" class="btn white" style="margin-top: 120px;">BEKIJK MEER</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col_6">
+                        <div class="card_box">
+                            <img class="card_image" src="/images/table.png" alt="table">
+                            <div class="card">
+                                <h2 class="title white" style="font-size: 35px; margin-bottom: 20px;"> verwerkers leverancier
+                                </h2>
+                                <p class="text_p white">Daag ons uit! Wij denken graag met je mee voor een passende
+                                    oplossing.</p>
+
+                                <!-- Button -->
+                                <a href="#" class="btn white" style="margin-top: 120px;">BEKIJK MEER</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------Card Section  Section End ----------------------->
+
+
+  <section style="padding: 80px 0px; text-align: center;">
+       <img src="/images/reflexfolie Dimmy 2.png" alt="">
+  </section>
+
+
+
+
+
+
+
+    <!-- ==========================================***=============================================== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".bannerSlider", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+
+
+
+    <!-- Swiper JS -->
+
+
+    <script>
+        var swiper = new Swiper(".productSlider", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>
